@@ -1,9 +1,10 @@
 .main{
-    margin-top: 120px;
-    margin-right: 280px;
+    margin : 120px 280px 100px 0;
     display: flex;
     gap: 1.5rem;
     transition: all .3s linear;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 
 .main-toggled{

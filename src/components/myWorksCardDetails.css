@@ -4,13 +4,23 @@
   background-color: #ffffff;
   border-radius: 1rem;
   margin-top: 1rem;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
+
+.myWorksDetails:hover .myWorksDetails-image{
+    transform: scale(1.05);
+}
+
 
 .myWorksDetails-image {
   width: 300px;
   height: 250px;
   overflow: hidden;
   z-index: 100;
+  border-radius: 1rem 1rem 0 0;
+  transition: all .3s ease-in-out;
 }
 
 .myWorksDetails-image > img {
@@ -23,7 +33,7 @@
   color: var(--text);
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .myWorksDetails-icon {
@@ -31,10 +41,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .1rem;
+  padding: .2rem;
   background-color: #ffffff;
   border-radius: .3rem;
   top: .75rem;
-  right: .75rem
-  /* z-index: 100000000; */
+  right: .75rem;
+  cursor: pointer;
+}
+
+.myWorksDetails-icon > svg {
+    transition: all .3s linear;
+}
+
+.myWorksDetails-icon:hover > svg {
+    transform: scale(1.3);
 }

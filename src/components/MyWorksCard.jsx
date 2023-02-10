@@ -2,10 +2,9 @@ import "./myWorksCard.css";
 import BorderColorOutlinedIcon from "@mui/icons-material/BorderColorOutlined";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import MyWorksCardDetails from "./MyWorksCardDetails";
-import ShoeImage from "../images/shoe.jpg";
 import ControlPointOutlinedIcon from "@mui/icons-material/ControlPointOutlined";
 
-const MyWorksCard = ({ title }) => {
+const MyWorksCard = ({ title,details }) => {
   return (
     <div className="myWorksCard">
       <div className="myWorksCard-top">
@@ -19,27 +18,18 @@ const MyWorksCard = ({ title }) => {
       </div>
       <div className="myWorksCard-bottom">
         <div className="myWorksCard--details">
-          <MyWorksCardDetails
-            title="تدوین تیزر تبلیغاتی نوشیدنی انرژی زا"
-            image={ShoeImage}
-          />
-          <MyWorksCardDetails
-            title="تدوین تیزر تبلیغاتی نوشیدنی انرژی زا"
-            image={ShoeImage}
-          />
-          <MyWorksCardDetails
-            title="تدوین تیزر تبلیغاتی نوشیدنی انرژی زا"
-            image={ShoeImage}
-          />
+            {details.map((d) => (
+                <MyWorksCardDetails title={d.subTitle} image={d.imgSrc} />
+            ))}
         </div>
         <div className="myWorksCard-bottom-left">
           <span className="myWorksCard-add">
             <ControlPointOutlinedIcon />
-            افزودن اثر
+           <h4> افزودن اثر</h4>
           </span>
-          <span className="myWorksCard-more">
+         {details.length >= 3 && <span className="myWorksCard-more">
             نمایش بیشتر...
-          </span>
+          </span>}
         </div>
       </div>
     </div>

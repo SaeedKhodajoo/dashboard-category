@@ -2,7 +2,7 @@ import './tag.css'
 
 const tag = ({tag}) => {
   return (
-    <span className='tag'>{tag}</span>
+    <h5 className='tag'>{tag}</h5>
   )
 }
 

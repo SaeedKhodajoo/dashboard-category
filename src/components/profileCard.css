@@ -4,6 +4,8 @@
   border: 1px solid #ccc;
   border-radius: 1rem;
   padding: 1rem;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.15);
 }
 
 .profileDetails {
@@ -52,15 +54,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
+    margin-top: .7rem;
 }
 
 .aboutme{
     color: var(--text);
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.4rem;
 }
 
 .profile-listItem{
     color: var(--text);
     font-size: 1rem;
+    font-weight: bold;
 }

@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import Main from "./components/Main";
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 function App() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Sidebar toggleSidebar={toggleSidebar} />
       <span className={`sidebarSlider ${toggleSidebar && 'sidebarSliderToggled'}`} onClick={()=>setToggleSidebar(prevState => !prevState)}>
-        {toggleSidebar ? <ArrowForwardIosOutlinedIcon /> : <ArrowBackIosOutlinedIcon />}
+        {toggleSidebar ? <ArrowBackIosNewIcon /> : <ArrowForwardIosOutlinedIcon />}
       </span>
       <Main toggleSidebar={toggleSidebar} />
     </div>

@@ -13,6 +13,7 @@
 }
 
 .sidebar a {
+  position: relative;
   text-decoration: none;
   display: block;
   transition: 0.3s;
@@ -21,9 +22,16 @@
   color: var(--text);
   height: 40px;
   margin: 0.5rem 1rem;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 1rem;
+  border-right: 4px solid transparent;
 
+}
+
+.sidebar  .active-link{
+  background-color: var(--sidebar-hover);
+  border-right: 4px solid var(--main);
+  color: var(--main);
 }
 
 .sidebar a span {
@@ -33,7 +41,6 @@
   height: 100%;
   width: 100%;
 }
-
 
 .sidebar-title {
   position: absolute;
@@ -57,11 +64,27 @@
   width: 80px;
 }
 
-.availableChats{
-
+.availableChats {
+  position: absolute;
+  top: 8.8rem;
+  right: 7rem;
   background-color: var(--main);
-  width: .4rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
 
+.availableChats-toggled {
+  right: 1.2rem;
+  top: 8rem;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

@@ -20,7 +20,7 @@
 }
 
 .worksView > h3{
- font-size: 1rem;
+ font-size: 1.2rem;
  color: var(--text);
 }
 
@@ -30,7 +30,7 @@
     padding: .5rem;
     background-color: #ccc;
     border-radius: 1rem;
-    gap: .2rem;
+    gap: .5rem;
 }
 
 .worksView-icon{
@@ -38,10 +38,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .2rem;
+    padding: .2rem .5rem;
     border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
 }
 
 .worksView-icon-left{
     border-radius: 1rem 0 0 1rem;
+}
+
+.worksView-icon > svg {
+    font-size: 1.7rem;
+}
+
+.worksView-icon--deactive{
+    background-color: transparent;
 }

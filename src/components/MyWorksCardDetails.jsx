@@ -5,10 +5,10 @@ const MyWorksCardDetails = ({ title, image }) => {
   return (
     <div className="myWorksDetails">
       <div className="myWorksDetails-image">
-        <img src={image} alt="" />
+        <img src={require(`../images/${image}.jpg`)} alt="" />
       </div>
       <div className="myWorksDetails-title">
-        <h4>{title}</h4>
+        <h5>{title}</h5>
       </div>
       <span className="myWorksDetails-icon">
         <MoreVertIcon />
