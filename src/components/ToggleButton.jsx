@@ -1,5 +1,6 @@
 import './toggleButton.css'
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 
 const ToggleButton = () => {
@@ -8,10 +9,10 @@ const ToggleButton = () => {
       <input type="checkbox" />
       <span className="slider round"></span>
       <span className='toggleIcon toggleIcon-light'>
-        <LogoutOutlinedIcon />
+        <LightModeIcon />
       </span>
       <span className='toggleIcon toggleIcon-dark'>
-        <LogoutOutlinedIcon />
+        <DarkModeIcon />
       </span>
     </label>
   );

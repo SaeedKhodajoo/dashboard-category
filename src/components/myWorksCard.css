@@ -1,0 +1,64 @@
+.myWorksCard {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.myWorksCard-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myWorksCard-title {
+  color: var(--main-text);
+  font-size: 1.4rem;
+}
+
+.myWorksCard-edit {
+  color: var(--text);
+}
+
+.myWorksCard-delete {
+  color: red;
+}
+
+.myWorksCard-bottom {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.myWorksCard--details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myWorksCard-bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+  padding: 2rem 0;
+
+}
+
+.myWorksCard-add {
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.myWorksCard-add > svg {
+  font-size: 1.8rem;
+}
+
+.myWorksCard-more{
+    color: var(--text);
+    font-size: 1.2rem;
+}

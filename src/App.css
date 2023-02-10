@@ -9,25 +9,30 @@
 
 .App{
   position: relative;
-  height: 95vh;
+  height: 100vh;
 }
 
 .sidebarSlider{
-  position: absolute;
-  top: 20rem;
-  right: 220px;
-  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  right: 232px;
+  z-index: 100;
   color: var(--main);
   border: 1px solid #ccc;
   border-radius: 50%;
   background-color: #ffffff;
-  padding: .5rem;
   transition: all .3s linear;
+  padding: .4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.sidebarSlider > svg {
+  font-size: 1.2rem;
 }
 
 .sidebarSliderToggled{
-  transform: translateX(145px);
+  right: 63px;
 }

@@ -1,0 +1,47 @@
+.myWorksSection{
+    width: 100%;
+}
+
+.myWorks-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.worksTitle{
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+.worksView{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.worksView > h3{
+ font-size: 1rem;
+ color: var(--text);
+}
+
+.worksView-icons{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: #ccc;
+    border-radius: 1rem;
+    gap: .2rem;
+}
+
+.worksView-icon{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.worksView-icon-left{
+    border-radius: 1rem 0 0 1rem;
+}

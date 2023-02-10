@@ -1,74 +1,65 @@
-import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import './sidebar.css'
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
+import TextSnippetOutlinedIcon from '@mui/icons-material/TextSnippetOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+
 
 const Sidebar = ({toggleSidebar}) => {
 
   return (
-    <>
+    
       <div id="mySidebar" className={`sidebar ${toggleSidebar && 'sidebar-toggled'}`}>
-        {/* <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          ×
-        </a> */}
         <a href="#">
-          <span>
-            <LogoutOutlinedIcon />
+          <span className={` ${toggleSidebar && 'link-toggled'}`}>
+            <DashboardIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> داشبورد</h3>
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <AccountCircleOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> پروفایل</h3>
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <ChatBubbleOutlineOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> گفتگو ها</h3>
+            {/* <span className='availableChats'>۳</span> */}
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <ForwardToInboxOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> ارسال دعوت نامه</h3>
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <TextSnippetOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}>صدور پیش فاکتور</h3>
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <PersonOutlineOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> عضویت در کانتمو</h3>
           </span>
         </a>
         <a href="#">
           <span>
-            <LogoutOutlinedIcon />
+            <EmojiEventsOutlinedIcon />
             <h3 className={`sidebar-title ${toggleSidebar && 'sidebar-title-hidden'}`}> نمایش آثار</h3>
           </span>
         </a>
 
-        {/* <span className="sidebarSlider">
-        <LogoutOutlinedIcon />
-        </span> */}
-      
+       
       </div>
-
-      {/* <div id="main">
-        <button class="openbtn" onclick="openNav()">
-          ☰ Open Sidebar
-        </button>
-        <h2>Collapsed Sidebar</h2>
-        <p>
-          Click on the hamburger menu/bar icon to open the sidebar, and push
-          this content to the right.
-        </p>
-      </div> */}
-    </>
+    
   );
 };
 

@@ -37,7 +37,7 @@
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--main);
   }
   
   input:focus + .slider {
@@ -50,7 +50,6 @@
     transform: translateY(-26px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -64,10 +63,11 @@
     z-index: 10;
   }
   .toggleIcon-light{
-    left: .5rem;
+    left: .3rem;
+    top: .25rem;
   }
 
   .toggleIcon-dark{
     top: 2rem;
-    left: .5rem;
+    left: .3rem;
   }

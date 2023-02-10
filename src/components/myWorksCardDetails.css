@@ -1,0 +1,40 @@
+.myWorksDetails {
+  position: relative;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.myWorksDetails-image {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.myWorksDetails-image > img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.myWorksDetails-title {
+  color: var(--text);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.myWorksDetails-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem;
+  background-color: #ffffff;
+  border-radius: .3rem;
+  top: .75rem;
+  right: .75rem
+  /* z-index: 100000000; */
+}

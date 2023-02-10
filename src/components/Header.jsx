@@ -14,6 +14,7 @@ const Header = () => {
         <div className='header-icons'>
             <span className='header-icon'>
                 <NotificationsNoneOutlinedIcon />
+                <span className='notification'>۲</span>
             </span>
             <span className='header-icon'>
                 <SettingsOutlinedIcon />

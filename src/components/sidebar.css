@@ -1,65 +1,75 @@
 .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 100;
-    top: 100px;
-    right: 0;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 20px;
-    transition: all .3s linear;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  transition: all 0.3s linear;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--text);
+  height: 40px;
+  margin: 0.5rem 1rem;
+  padding: .1rem .5rem;
+  border-radius: 1rem;
+
+}
+
+.sidebar a span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.sidebar-title {
+  position: absolute;
+  margin-right: 1rem;
+  transition: all 0.2s linear;
+  opacity: 1;
+  right: 1rem;
+}
+
+.sidebar-title-hidden {
+  opacity: 0;
+  right: -4rem;
+}
+
+.sidebar a:hover {
+  background-color: var(--sidebar-hover);
+  border-right: 4px solid var(--main);
+}
+
+.sidebar-toggled {
+  width: 80px;
+}
+
+.availableChats{
+
+  background-color: var(--main);
+  width: .4rem;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
   }
-  
   .sidebar a {
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    font-size: 14px;
-    font-weight: lighter;
-    color: var(--text);
-    height: 40px;
-    padding: .5rem 1rem;
-    margin: 1rem .5rem;
-    border-radius: 1rem;
+    font-size: 18px;
   }
-  
-  .sidebar a span {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  .sidebar-title{
-    position: absolute;
-    margin-right: 1rem;
-    transition: all 0.2s linear;
-    opacity: 1;
-    right: 1rem;
-  }
-
-
-  .sidebar-title-hidden{
-    opacity: 0;
-    right: -4rem;
-  }
-
-  .sidebar a:hover {
-    background-color: var(--sidebar-hover);
-    border-right: 4px solid var(--main);
-  }
-
-  .sidebar-toggled{
-    width: 100px;
-  }
-
-
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+} */
