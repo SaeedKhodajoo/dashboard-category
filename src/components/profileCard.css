@@ -1,0 +1,66 @@
+.profileCard {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.profileImage {
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid var(--main);
+  border-radius: 100%;
+}
+
+.profileImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.profileName {
+  color: var(--main);
+  font-size: 1.6rem;
+}
+
+.profileSocialMedia {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profileSocialMedia span {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    color: var(--text);
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.aboutme{
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.profile-listItem{
+    color: var(--text);
+    font-size: 1rem;
+}

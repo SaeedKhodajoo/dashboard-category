@@ -1,0 +1,13 @@
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    width: 100%;
+    color: var(--text-title);
+    margin-top: 1rem;
+}
+
+.title-wrapper > hr {
+    flex: 1;
+    height: 0;
+}

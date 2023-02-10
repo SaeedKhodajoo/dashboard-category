@@ -1,3 +1,12 @@
+:root {
+  --main: #1352fb;
+  --main-text: #9baaed;
+  --text-bg:#f2f4fd;
+  --text:#b6b5b8;
+  --text-title:#c7c0c5;
+  --sidebar-hover:#f3f5ff
+}
+
 .App{
   position: relative;
   height: 95vh;
@@ -8,12 +17,15 @@
   top: 20rem;
   right: 220px;
   z-index: 1000;
-  color: blue;
+  color: var(--main);
   border: 1px solid #ccc;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #ffffff;
   padding: .5rem;
   transition: all .3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebarSliderToggled{
