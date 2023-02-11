@@ -1,9 +1,9 @@
 import './header.css'
-import Logo from '../images/logo.png'
+import Logo from '../../images/logo.png'
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-import ToggleButton from './ToggleButton';
+import ToggleButton from '../ui/ToggleButton';
 
 const Header = () => {
 

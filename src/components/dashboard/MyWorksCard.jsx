@@ -1,7 +1,9 @@
 import "./myWorksCard.css";
+
+import MyWorksCardDetails from "./MyWorksCardDetails";
+
 import BorderColorOutlinedIcon from "@mui/icons-material/BorderColorOutlined";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
-import MyWorksCardDetails from "./MyWorksCardDetails";
 import ControlPointOutlinedIcon from "@mui/icons-material/ControlPointOutlined";
 
 const MyWorksCard = ({ title,details }) => {
@@ -19,7 +21,7 @@ const MyWorksCard = ({ title,details }) => {
       <div className="myWorksCard-bottom">
         <div className="myWorksCard--details">
             {details.map((d) => (
-                <MyWorksCardDetails title={d.subTitle} image={d.imgSrc} />
+                <MyWorksCardDetails key={d.id} title={d.subTitle} image={d.imgSrc} />
             ))}
         </div>
         <div className="myWorksCard-bottom-left">

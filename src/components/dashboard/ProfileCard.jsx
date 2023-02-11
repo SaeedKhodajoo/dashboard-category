@@ -1,10 +1,10 @@
 import "./profileCard.css";
-import TitleComponent from "./TitleComponent";
+import Tag from "../ui/Tag";
+import TitleComponent from "../ui/TitleComponent";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ProfileImage from "../images/avatarImage.png";
-import Tag from "./Tag";
+import ProfileImage from "../../images/avatarImage.png";
 
 const ProfileCard = () => {
   return (

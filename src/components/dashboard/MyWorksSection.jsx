@@ -1,8 +1,10 @@
 import "./myWorksSection.css";
+
+import MyWorksCard from "./MyWorksCard";
+
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ViewStreamOutlinedIcon from "@mui/icons-material/ViewStreamOutlined";
-import MyWorksCard from "./MyWorksCard";
-import {data} from '../data/data'
+import {data} from '../../data/data'
 import { useState } from "react";
 
 const MyWorksSection = () => {
@@ -27,11 +29,8 @@ const MyWorksSection = () => {
       <div className="myWorksSection-bottom">
         <div className="myWorksSection--details">
             {data.map(d => (
-                <MyWorksCard title={d.title} details={d.details} />
+                <MyWorksCard key={d.id} title={d.title} details={d.details} />
             ))}
-          {/* <MyWorksCard title="تدوین و صداگذاری" />
-          <MyWorksCard title='طراحی و گرافیک' />
-          <MyWorksCard title='خوانندگی و گویندگی' /> */}
         </div>
       </div>
     </div>
